@@ -11,8 +11,8 @@ function TestFunctions(string)
 
     %DiffrDrive
     if string=="DiffDrive"
-        [t,y]=ode45(@(t,y)DiffDrive(t,y,u,p_0),tspan,y_0);
-        plot(t,y)
+        [~,y]=ode45(@(t,y)DiffDrive(t,y,u,p_0),tspan,y_0);
+        plot(y(1),y(2))
     end
 
     %DDController
