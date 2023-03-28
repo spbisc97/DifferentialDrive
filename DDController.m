@@ -5,7 +5,7 @@ function [deu] = DDController(t,eu,y,p)
         %r=p(1); b=p(2); %Radious and Axis
     % e_v=e(1);e_x=e(2);e_y=e(3);
     k=[10,80,30]';%Control Coeff
-    k(4)=0.5;
+    k(4)=1;
     de=depsilon(t,e,y,k);
 
     u=input(t,e,y,p,k);

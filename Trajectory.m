@@ -30,7 +30,7 @@ x_i=y(1); y_i=y(2); theta_i=y(3);     % initial configuration
 %x_f=0; y_f=0; theta_f=pi/2;  % final configuration
 % % 
 % forward or backward motion (k>0 or <0)
-k=1;   % k=ki=kf same value for initial and final geometric velocity 
+k=0.1;   % k=ki=kf same value for initial and final geometric velocity 
 
 %%%%%%%%%%%%%%%
 % computation %
